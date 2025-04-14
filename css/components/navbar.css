@@ -3,8 +3,12 @@
   left: 0;
   width: 100%;
   z-index: 10;
-  background-color: #333;
+  background-color: #030303;
   transition: box-shadow 0.3s ease-in-out;
+  position: fixed;
+  height: 60px;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-logo {
@@ -13,8 +17,9 @@
 
 .monograma {
   font-family: 'Poppins', sans-serif; 
-  font-size: 3rem;
+  font-size: 32px;  /*or 3rem*/
   font-weight: bold;
+  margin-left: 15px;
   color: #661c89;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -35,12 +40,14 @@
 }
 
 .navbar .navbar-content {
-  padding: 3rem 4rem 1rem;
+  padding: 0.5 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: 100%;
   position: relative;
+  box-sizing: border-box;
 }
 
 
@@ -60,8 +67,9 @@
 }
 
 .navbar .navbar-content .navbar-links a {
-  padding: 1rem 1.5rem;
+  padding: 12px; /*or 1rem 1.5rem*/
   margin: 3px;
+  margin-right: 22px;
   display: inline-block;
   background-color: #661c89;
   border-radius: 25px;

@@ -1,5 +1,6 @@
 #header {
   position: relative;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,6 +8,7 @@
   color: #fff;
   min-height: 50vh;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding-top: 120px;
 }
 
 #header img {
