@@ -3,7 +3,7 @@
   left: 0;
   width: 100%;
   z-index: 10;
-  background-color: #030303;
+  background-color: #333;
   transition: box-shadow 0.3s ease-in-out;
   position: fixed;
   height: 60px;
