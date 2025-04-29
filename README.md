@@ -2,11 +2,15 @@
 
 Este é um site de portfólio moderno e responsivo. O projeto apresenta uma navegação intuitiva, animações suaves e um design profissional para destacar minhas habilidades e projetos.
 
-![Captura de tela 2025-02-16 011318](https://github.com/user-attachments/assets/110c54b1-9f3f-40ed-8c05-214f5e2ea4dd)
-![Captura de tela 2025-02-16 011424](https://github.com/user-attachments/assets/ada78eb2-2865-48f9-a87d-73538a6b719f)
-![Captura de tela 2025-02-16 011352](https://github.com/user-attachments/assets/988eae9b-7ab7-47fd-8ff9-f30dbb36590a)
-![Captura de tela 2025-02-16 011456](https://github.com/user-attachments/assets/11e4672f-7c64-4733-810b-73fbfa97404a)
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/189636c1-467c-47a7-ae99-fbab6eb67201" width="700" />
+  <br><br>
+  <img src="https://github.com/user-attachments/assets/7dec3e47-d19b-48da-a1fd-1e77d3f0b399" width="700" />
+  <br><br>
+  <img src="https://github.com/user-attachments/assets/fe8791c3-2cb9-4a96-bbe5-35e2fcba0b03" width="700" />
+  <br><br>
+  <img src="https://github.com/user-attachments/assets/192d48e4-d3d4-4d98-ae1b-d3d35cbeda32" width="700" />
+</p>
 ## 🚀 Funcionalidades
 
 ✅ **Menu Responsivo:** Um menu de navegação otimizado para desktop e mobile.  
