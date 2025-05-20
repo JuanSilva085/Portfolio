@@ -11,6 +11,7 @@ Este é um site de portfólio moderno e responsivo. O projeto apresenta uma nave
   <br><br>
   <img src="https://github.com/user-attachments/assets/192d48e4-d3d4-4d98-ae1b-d3d35cbeda32" width="700" />
 </p>
+
 ## 🚀 Funcionalidades
 
 ✅ **Menu Responsivo:** Um menu de navegação otimizado para desktop e mobile.  
@@ -21,7 +22,7 @@ Este é um site de portfólio moderno e responsivo. O projeto apresenta uma nave
 
 ----------------------------------------------------------------------
 
-🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
 <img align="left" width="50px" style="padding-right: 50px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />  
 
