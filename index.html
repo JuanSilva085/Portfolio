@@ -1,250 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="/assets/logo.png">
-  <title>Portfolio Juan</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/png" href="/assets/portfolio.png" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
- 
-  <link rel="stylesheet" href="extends.css">
-  <script src="script.js"></script>
-
+<title>Portfolio Juan</title>
+<link rel="stylesheet" href="extends.css" />
 </head>
 <body>
 
-<div class="container">
-  <nav class="navbar">
-    <div class="navbar-content">
-      <a href="#" class="navbar-logo">
-        <span class="monograma">JS</span>
-      </a>
-      <ul class="navbar-links">
-        <li><a href="#header">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#footer">Contact</a></li>
-      </ul>
-      <div class="navbar-mobile">
-        <img src="/assets/menu.svg" alt="menu" class="menu-icon">
-        <ul class="navbar-links-mobile">
-         <li><a href="#header">Home</a></li>
-         <li><a href="#about">About</a></li>
-         <li><a href="#skills">Skills</a></li>
-         <li><a href="#projects">Projects</a></li>
-         <li><a href="#footer">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-<!---------- ||||| HEADER ||||| ---------->
-
-  <header id="header">
-    <div class="me">
-      <h1>Olá, meu nome é Juan Silva, estudante 
-        de desenvolvimento de software 
-        e Banco de Dados </h1>
-    </div>
-    <div>
-      <div class="img-content">
-       <img src="/img/eu.PNG" alt="me">
-      </div>
-       <div class="curriculo">
-        <a href="/assets/Currículo_Juan (5).pdf" target="_blank">
-         <button>DOWNLOAD CV</button>
-        </a>
-    </div>
-    </div>
-  </header>
-
-  <section class="about" id="about">
-    <h2>Minhas redes sociais:</h2>
-    <ul class="social-links">
-      <li>
-        <a href="https://github.com/JuanSilva085" target="_blank"><i class="fa-brands fa-github"></i> 
-        <span>GitHub</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/juan-silva13n/" target="_blank"><i class="fa-brands fa-linkedin"></i>
-        <span>Linkedin</span>
-        </a>
-      </li>
-    </ul>
-      
-    <h3>Estudante de desenvolvimento de software 
-      e banco de dados.</h3>
-     
-      <p>Desenvolvedor em formação com foco em 
-        desenvolvimento de software e 
-        Banco de Dados. Tenho experiência 
-        prática desenvolvendo projetos no GitHub, 
-        utilizando SQL, C# e JavaScript. 
-        Além disso, possuo certificações em .NET, 
-        SCRUM, Microsoft Excel, Banco de Dados 
-        e tenho inglês básico. 
-        Sou proativo, organizado, disciplinado, 
-        gosto de trabalhar em equipe 
-        e gosto de resolver problemas 
-        usando tecnologia. Busco uma oportunidade 
-        de estágio para crescer profissionalmente, 
-        aplicar meus conhecimentos e contribuir 
-        com soluções inovadoras.
-      </p>
-  </section>
-  
-
-<!---------- ||||| SKILLS ||||| ---------->
-
-
-<section class="skills" id="skills">
-  <div class="skills-content">
-    <h2>Tecnologias que estou estudando no momento</h2>
-    <ul class="skills-icons">
-      <li><img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C# Icon" /></li>
-      <li><img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" alt=".NET Core Icon" /></li>
-      <li><img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-plain-wordmark.svg" alt=".NET Icon" /></li>
-      <li><img class="icon "src="https://miro.medium.com/v2/resize:fit:591/0*8jkgnNmQhLCKGqWZ.png" alt="Blazor Icon" /></li>
-      <li><img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5 Icon" /></li>
-      <li><img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3 Icon" /></li>
-    </ul>
-    
-  </div>
-</section>
-
-
-  
-
- <!---------- ||||| PROJETOS ||||| ---------->
-
-
- <section class="projects" id="projects">
-  <div class="projects-content">
-    <h2>Projects</h2>
-    <p>Aqui estão alguns dos meus projetos mais recentes.</p>
-  </div>
-
-  <ul id="projects-list">
-    <li>
-      <div class="img-project">
-        <img src="/img/ecommerce_API.png" alt="Ecommerce" />
-      </div>
-      <div class="projects-info">
-        <h3>Ecommerce Full-Stack | C# + ASP.NET Core + HTML/CSS/JS + Stripe API</h3>
-          <p>
-            Um projeto de um ecommerce simples com front-end em HTML/CSS/JS, back-end em ASP.NET Core (C#) e integração com a API do Stripe para simular pagamentos. 
-          </p>
-          <a href="https://github.com/JuanSilva085/Simple-Ecommerce.API" target="_blank">Leia mais &rarr;</a>
-      </div>
-    </li>
-    
-    <li>
-      <div class="img-project">
-          <img src="/img/users-manager.png" alt="Users API" />
-      </div>
-      <div class="projects-info">
-          <h3>Gerenciador de Usuários - Fullstack CRUD</h3>
-          <p>
-            Uma aplicação Fullstack CRUD que permite gerenciar usuários, 
-            incluindo a criação, leitura, atualização e exclusão de 
-            registros no banco de dados.
-          </p>
-          <a href="https://github.com/JuanSilva085/Users-API" target="_blank">Leia mais &rarr;</a>
-      </div>
-   </li>
-    
-   <li>
-        <div class="img-project">
-            <img src="/img/Automação-de-tarefas.png" alt="Automação de Tarefas" />
-        </div>
-        <div class="projects-info">
-            <h3>Sistema de Automação de Tarefas</h3>
-            <p>
-                Aplicação para acesso rápido a sites e programas essenciais, permitindo abrir Google, YouTube, GitHub e executar softwares locais.
-            </p>
-            <a href="https://github.com/JuanSilva085/TaskAutomationSoftware" target="_blank">Leia mais &rarr;</a>
-        </div>
-    </li>
-
-    <li>
-        <div class="img-project">
-            <img src="/img/Library-System.png" alt="Sistema de Biblioteca" />
-        </div>
-        <div class="projects-info">
-            <h3>Sistema de Gerenciamento de Biblioteca</h3>
-            <p>
-                Sistema funcional para gerenciamento de biblioteca. Permite: Cadastro de livros, Registro de usuários, Empréstimos e Devoluções de livros, com uma interface de console interativa.
-            </p>
-            <a href="https://github.com/JuanSilva085/System-Library" target="_blank">Leia mais &rarr;</a>
-        </div>
-    </li>
-
-    <li>
-        <div class="img-project">
-            <img src="/img/agenda-de-contatos.png" alt="Agenda de Contatos" />
-        </div>
-        <div class="projects-info">
-            <h3>Agenda de Contatos</h3>
-            <p>
-                Aplicação para gerenciamento de contatos com validação de dados e otimização da manipulação da lista de contatos.
-            </p>
-            <a href="https://github.com/JuanSilva085/Contact-Book" target="_blank">Leia mais &rarr;</a>
-        </div>
-    </li>
-    
- <li>
-  <div class="img-project">
-      <img src="/img/Gestor-Financeiro.png" alt="Users API" />
-  </div>
-  <div class="projects-info">
-      <h3>Gestor Financeiro</h3>
-      <p>
-        Este é um projeto de gerenciamento de finanças pessoais, 
-        onde você pode registrar entradas e saídas.
-      </p>
-      <a href="https://github.com/JuanSilva085/Financial-Management" target="_blank">Leia mais &rarr;</a>
-  </div>
-</li>
-
-</ul>
-</section>
-
-  
-<!---------- ||||| FOOTER ||||| ---------->
-
-  
-  <footer id="footer">
-    <h2>Vamos conversar?</h2>
-    <p>Eu ficaria feliz em saber mais sobre 
-      seus projetos e como podemos trabalhar 
-      juntos para torná-los realidade.</p>
-      <br>
-      <a href="mailto:juansilvasousa085@gmail.com">
-       <p>juansilvasousa085@gmail.com</p>
-      </a>
-      <br>
-    <p>(85) 99159-0159</p>
-      <br>
-    <ul class="social-links">
-      <li>
-        <a href="https://github.com/JuanSilva085" target="_blank">
-          <i class="fa-brands fa-github"></i>
-          <span>GitHub</span> 
-          </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/juan-silva13n/" target="_blank">
-          <i class="fa-brands fa-linkedin"></i>
-        <span>LinkedIn</span>
-        </a>
-      </li>
-    </ul>
-    <p class="copyright">&copy; 2025 <a href="https://www.linkedin.com/in/juan-silva13n/">Juan Silva.</a> All rigths reserved.</p>
-  </footer>
+<div class="scroll-indicator">
+<div class="scroll-progress" id="scrollProgress"></div>
 </div>
+
+<canvas id="icosaedros"></canvas>
+
+<div class="bg-animation">
+<div class="floating-shape"></div>
+<div class="floating-shape"></div>
+<div class="floating-shape"></div>
+<div class="floating-shape"></div>
+</div>
+
+<!-- Header -->
+<header>
+<nav>
+    <div class="logo">JS</div>
+    <ul class="nav-links">
+    <li><a href="#home">Início</a></li>
+    <li><a href="#about">Sobre</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projetos</a></li>
+    <li><a href="#contact">Contato</a></li>
+    </ul>
+</nav>
+</header>
+
+<!-- Hero / About -->
+<section id="home" class="hero">
+<div class="hero-content">
+    <img src="/img/eu.png" alt="me" class="me-img" />
+    <h1>Juan Silva</h1>
+    <p>Olá 🤗, tudo bem?</p>
+    <a href="#projects" class="cta-button">Ver Projetos</a>
+    <a href="/assets/Currículo_Juan (8).pdf" class="cta-button" target="_blank">DOWNLOAD CV</a>
+</div>
+</section>
+
+<section id="about" class="fade-in">
+<h2 class="section-title">Sobre Mim</h2>
+<div style="text-align: center; max-width: 800px; margin: 0 auto;">
+    <p style="font-size: 1.2rem; line-height: 1.8; opacity: 0.8;">
+    Atualmente curso Análise e Desenvolvimento de Sistemas e venho aprofundando meus conhecimentos em desenvolvimento de software 
+    com C# e JavaScript. Tenho interesse especial pelo desenvolvimento back-end. 
+    </p>
+</div>
+</section>
+
+
+<!-- Skills / Projects -->
+<section id="skills" class="fade-in">
+<h2 class="section-title">Tecnologias que estou estudando no momento</h2>
+<div class="skills-grid">
+    <div class="skill-card">
+    <h3>🎨 Frontend</h3>
+    <p>HTML5, CSS3, JS</p>
+    </div>
+    <div class="skill-card">
+    <h3>🧠 Backend</h3>
+    <p>C#, .NET, ASP.NET Core, Entity Framework, REST API, CRUD</p>
+    </div>
+    <div class="skill-card">
+    <h3>🗄️ Database</h3>
+    <p>SQLite, PostgreSQL</p>
+    </div>
+</div>
+</section>
+
+<section id="projects" class="fade-in">
+<h2 class="section-title">Meus Projetos</h2>
+<div class="projects-grid">
+
+    <div class="project-card">
+    <div class="project-image"><img src="/img/ecommerce_API.png" alt=""></div>
+    <div class="project-content">
+        <h3>Plataforma de Ecommerce</h3>
+        <p>Plataforma completa de e-commerce com catálogo de produtos, carrinho de compras, e integração com a API de pagamentos Stripe para simulação de checkout.</p>
+        <div class="project-tech">
+        <span class="tech-tag">C#</span>
+        <span class="tech-tag">ASP.NET Core</span>
+        <span class="tech-tag">Stripe API</span>
+        <span class="tech-tag">HTML</span>
+        <span class="tech-tag">CSS</span>
+        <span class="tech-tag">JS</span>
+        </div>
+        <div class="project-links">
+        <a href="https://github.com/JuanSilva085/Simple-Ecommerce.API" class="project-link">GitHub</a>
+        </div>
+    </div>
+    </div>
+
+    <div class="project-card">
+    <div class="project-image"><img src="/img/users-manager.png" alt=""></div>
+    <div class="project-content">
+        <h3>Sistema de Gerenciamento de Usuários</h3>
+        <p>Aplicação CRUD Full-Stack, com integração completa via API RESTful, interface interativa para testes e manipulação de dados.</p>
+        <div class="project-tech">
+        <span class="tech-tag">C#</span>
+        <span class="tech-tag">ASP.NET Core</span>
+        <span class="tech-tag">SQLite</span>
+        <span class="tech-tag">HTML</span>
+        <span class="tech-tag">CSS</span>
+        <span class="tech-tag">JS</span>
+        </div>
+        <div class="project-links">
+        <a href="https://github.com/JuanSilva085/Users-API" class="project-link">GitHub</a>
+        </div>
+    </div>
+    </div>
+
+    <div class="project-card">
+    <div class="project-image"><img src="/img/finance-manager.png" alt=""></div>
+    <div class="project-content">
+        <h3>Gestor Financeiro</h3>
+        <p>Gerenciador Financeiro. Permite registrar receitas e despesas, visualizar saldo atual, exportar os dados em PDF ou EXCEL e manter o histórico das transações.</p>
+        <div class="project-tech">
+        <span class="tech-tag">C#</span>
+        <span class="tech-tag">ASP.NET Core</span>
+        <span class="tech-tag">Entity Framework Core</span>
+        <span class="tech-tag">SQLite</span>
+        <span class="tech-tag">HTML</span>
+        <span class="tech-tag">CSS</span>
+        <span class="tech-tag">JS</span>
+        <span class="tech-tag">Chart.js</span>
+        <span class="tech-tag">SheetJS</span>
+        <span class="tech-tag">jsPDF</span>
+        </div>
+        <div class="project-links">
+        <a href="#https://github.com/JuanSilva085/Finances-Manager" class="project-link">GitHub</a>
+        </div>
+    </div>
+    </div>
+
+    <div class="project-card">
+    <div class="project-image"><img src="/img/dashboard.png" alt=""></div>
+    <div class="project-content">
+        <h3>Dashboard Analytics</h3>
+        <p>Um Dashboard que exibe o resumo de vendas e gastos mensais com gráficos dinâmicos, total geral, ticket médio e filtro por mês, e também permite exportar os dados em PDF. 
+            Ideal para análise visual de dados financeiros.</p>
+        <div class="project-tech">
+        <span class="tech-tag">C#</span>
+        <span class="tech-tag">ASP.NET Core</span>
+        <span class="tech-tag">Entity Framework Core</span>
+        <span class="tech-tag">SQLite</span>
+        <span class="tech-tag">HTML</span>
+        <span class="tech-tag">CSS</span>
+        <span class="tech-tag">JS</span>
+        <span class="tech-tag">Chart.js</span>
+        <span class="tech-tag">jsPDF</span>
+        </div>
+        <div class="project-links">
+        <a href="#https://github.com/JuanSilva085/DashboardAnalytics" class="project-link">GitHub</a>
+        </div>
+    </div>
+    </div>
+
+</div>
+</section>
+
+<!-- Contato -->
+<footer>
+<section id="contact" class="contact fade-in">
+    <h2 class="section-title">Vamos Conversar?</h2>
+    <p style="font-size: 1.2rem; opacity: 0.8; margin-bottom: 30px;">
+    Estou sempre aberto a novas oportunidades e projetos interessantes
+    </p>
+    <div class="contact-info">
+    <div class="contact-item">
+        <div class="contact-icon">📧</div>
+        <a href="mailto:juansilvasousa085@gmail.com">juansilvasousa085@gmail.com</a>
+    </div>
+    <div class="contact-item">
+        <div class="contact-icon">📱</div>
+        <a href="">+55 85 99159-0159</a>
+    </div>
+    <div class="contact-item">
+        <div class="contact-icon">💼</div>
+        <a href="https://linkedin.com/in/juan-silva13n" target="_blank">LinkedIn</a>
+    </div>
+    <div class="contact-item">
+        <div class="contact-icon">🐙</div>
+        <a href="https://github.com/JuanSilva085" target="_blank">GitHub</a>
+    </div>
+    </div>
+</section>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
