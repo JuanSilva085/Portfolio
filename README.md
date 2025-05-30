@@ -11,17 +11,10 @@ Este é um site de portfólio moderno e responsivo. O projeto apresenta uma nave
   <br><br>
   <img src="https://github.com/user-attachments/assets/192d48e4-d3d4-4d98-ae1b-d3d35cbeda32" width="700" />
 </p>
-## 🚀 Funcionalidades
-
-✅ **Menu Responsivo:** Um menu de navegação otimizado para desktop e mobile.  
-✅ **Design Moderno:** Layout limpo e agradável, adaptado para diversas telas.  
-✅ **Seções Bem Definidas:** Home, About, Skills, Projects e Contact.  
-✅ **Animações e Transições Suaves:** Efeitos de hover e movimentação responsiva.  
-✅ **Código Estruturado:** Fácil manutenção e personalização.  
 
 ----------------------------------------------------------------------
 
-🛠️ Tecnologias Utilizadas
+# 🛠️ Tecnologias Utilizadas
 
 <img align="left" width="50px" style="padding-right: 50px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />  
 

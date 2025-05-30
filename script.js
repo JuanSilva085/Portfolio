@@ -6,7 +6,7 @@ window.addEventListener('scroll', () => {
     document.getElementById('scrollProgress').style.width = scrolled + '%';
 });
 
-// animação navbar
+// animação suave ao clicar no navbar
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 anchor.addEventListener('click', function (e) {
 e.preventDefault(); 
@@ -44,7 +44,7 @@ document.querySelectorAll('.fade-in').forEach(el => {
 });
 
 
-//muda a cor de fundo do header ao descer na página
+//muda a cor de fundo do cabeçalho ao descer na página
 window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
     
@@ -56,7 +56,7 @@ window.addEventListener('scroll', () => {
 });
 
 //cria as formas geométricas
-function criarFormasVoando() {
+function addFloatingShape() {
     //container onde as formas vão aparecer
     const bgAnimation = document.querySelector('.bg-animation');
     
@@ -65,19 +65,19 @@ function criarFormasVoando() {
     shape.classList.add('floating-shape');
 
     // aleatoriedade das formas
-    const tamanho = Math.random() * 60 + 40;      
-    const posicaoLeft = Math.random() * 100;          
-    const duracao = Math.random() * 20 + 15; 
-    const atraso = Math.random() * 10;          
+    const size = Math.random() * 60 + 40;      
+    const left = Math.random() * 100;          
+    const duration = Math.random() * 20 + 15; 
+    const delay = Math.random() * 10;          
 
     //aplica o tamanho e a posição
-    shape.style.width = tamanho + 'px';
-    shape.style.height = tamanho + 'px';
-    shape.style.left = posicaoLeft + '%';
-    shape.style.animationDuration = duracao + 's';
-    shape.style.animationDelay = atraso + 's';
+    shape.style.width = size + 'px';
+    shape.style.height = size + 'px';
+    shape.style.left = left + '%';
+    shape.style.animationDuration = duration + 's';
+    shape.style.animationDelay = delay + 's';
 
-    const formas = [
+    const shapes = [
         'polygon(50% 0%, 0% 100%, 100% 100%)',    
         'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)', 
         'circle(50%)',                              
@@ -86,18 +86,18 @@ function criarFormasVoando() {
         'polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%)', 
     ];
 
-    const cores = [
+    const gradients = [
         'linear-gradient(45deg, #ff6b6b, #4ecdc4)', 
         'linear-gradient(45deg, #a8e6cf, #ffd93d)', 
         'linear-gradient(45deg, #ff9a9e, #fecfef)', 
         'linear-gradient(45deg, #a18cd1, #fbc2eb)', 
         'linear-gradient(45deg, #ffecd2, #fcb69f)', 
         'linear-gradient(45deg, #667eea, #764ba2)'  
-    ]; 
+    ];
 
     //escolhe uma forma e cor aleatória
-    shape.style.clipPath = formas[Math.floor(Math.random() * formas.length)];
-    shape.style.background = cores[Math.floor(Math.random() * cores.length)];
+    shape.style.clipPath = shapes[Math.floor(Math.random() * shapes.length)];
+    shape.style.background = gradients[Math.floor(Math.random() * gradients.length)];
 
     //adiciona a forma na tela
     bgAnimation.appendChild(shape);
@@ -107,45 +107,44 @@ function criarFormasVoando() {
         if (shape.parentNode) {
             shape.parentNode.removeChild(shape);
         }
-    }, (duracao + atraso) * 1000); 
+    }, (duration + delay) * 1000); 
 }
 
 //cria uma nova forma a cada 3 segundos
-setInterval(criarFormasVoando, 3000);
+setInterval(addFloatingShape, 3000);
 
 
-//seção principal se move devagar para ficar agradavel visualmente
+//seção principal se mover mais devagar do que o resto da página para ficar agradavel visualmente
 window.addEventListener('scroll', () => {
-    const qtdScrolled = window.pageYOffset; 
+    const scrolled = window.pageYOffset; 
     const hero = document.querySelector('.hero'); 
-    const velocidade = qtdScrolled * -0.5; 
+    const rate = scrolled * -0.5; 
     
     //aplicando o movimento
-    hero.style.transform = `translateY(${velocidade}px)`;
+    hero.style.transform = `translateY(${rate}px)`;
 });
 
-//variáveis globais Three.js
-let cena, camera, renderizador, icosaedros = [];
+//variáveis globais para o Three.js
+let scene, camera, renderer, icosahedrons = [];
 
-function iniciarThreeJS() {
+function initThree() {
     //onde os objetos 3D vão aparecer
-    console.log("animações funcionando (y)");
-    cena = new THREE.Scene();
+    scene = new THREE.Scene();
     
     camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     
-    renderizador = new THREE.WebGLRenderer({ 
+    renderer = new THREE.WebGLRenderer({ 
         canvas: document.getElementById('icosaedros'), 
         alpha: true 
     });
-    renderizador.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(window.innerWidth, window.innerHeight);
 
-    // cria 15 icosaedros
+    // 15 icosaedros
     for (let i = 0; i < 15; i++) {
         //forma do icosaedro
-        const geometria = new THREE.IcosahedronGeometry(Math.random() * 2 + 1, 0);
+        const geometry = new THREE.IcosahedronGeometry(Math.random() * 2 + 1, 0);
         
-        //cor e aparencia do material
+        //cor e aparência do material
         const material = new THREE.MeshBasicMaterial({
             color: new THREE.Color().setHSL(Math.random(), 0.7, 0.5), 
             wireframe: true,   
@@ -153,51 +152,49 @@ function iniciarThreeJS() {
             opacity: 0.3       
         });
         
-        const icosaedro = new THREE.Mesh(geometria, material);
+        const icosahedron = new THREE.Mesh(geometry, material);
 
-        icosaedro.position.set(
+        icosahedron.position.set(
             (Math.random() - 0.5) * 100, 
             (Math.random() - 0.5) * 100, 
             (Math.random() - 0.5) * 100  
         );
 
-        icosaedro.rotation.set(
+        icosahedron.rotation.set(
             Math.random() * Math.PI, 
             Math.random() * Math.PI, 
             Math.random() * Math.PI 
         );
 
         //adiciona o icosaedro 
-        cena.add(icosaedro);
-        icosaedros.push(icosaedro);
+        scene.add(icosahedron);
+        icosahedrons.push(icosahedron);
     }
     camera.position.z = 30;
 }
+//função rodar continuamente para criar a animação
+function animate() {
+    requestAnimationFrame(animate);
 
-//função pra rodar continuamente e criar a animação
-function animar() {
-    requestAnimationFrame(animar);
-
-    //fazendo os icosaedros girarem
-    icosaedros.forEach(icosaedro => {
+    //animação icosaedros
+    icosahedrons.forEach(icosahedron => {
        
-        icosaedro.rotation.x += 0.005; 
-        icosaedro.rotation.y += 0.005; 
+        icosahedron.rotation.x += 0.005; 
+        icosahedron.rotation.y += 0.005; 
         
-        // movimento flutuar
-        icosaedro.position.y += Math.sin(Date.now() * 0.001 + icosaedro.position.x) * 0.01;
+        icosahedron.position.y += Math.sin(Date.now() * 0.001 + icosahedron.position.x) * 0.01;
     });
 
-    renderizador.render(cena, camera);
+    renderer.render(scene, camera);
 }
  
-function redimensionar() {
+function handleResize() {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     
-   renderizador.setSize(window.innerWidth, window.innerHeight);
+   renderer.setSize(window.innerWidth, window.innerHeight);
 }
 
-iniciarThreeJS();  
-animar();    
-window.addEventListener('resize', redimensionar);
+initThree();  
+animate();    
+window.addEventListener('resize', handleResize); 

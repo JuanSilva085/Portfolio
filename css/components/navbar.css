@@ -22,7 +22,7 @@ nav {
 .nav-links a {
     color: #fff;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     position: relative;
 }
 
@@ -38,7 +38,7 @@ nav {
     width: 0;
     height: 2px;
     background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
-    transition: width 0.3s ease;
+    transition: width 0.4s ease;
 }
 
 .nav-links a:hover::after {

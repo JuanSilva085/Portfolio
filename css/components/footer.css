@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     gap: 50px;
-    margin-top: 50px;
+    margin-top: 45px;
     flex-wrap: wrap;
     cursor: pointer;
 }
