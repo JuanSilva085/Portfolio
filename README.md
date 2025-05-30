@@ -2,6 +2,9 @@
 
 Este é um site de portfólio moderno e responsivo. O projeto apresenta uma navegação intuitiva, animações suaves e um design profissional para destacar minhas habilidades e projetos.
 
+# Link: [Portfolio](https://portfolio-ruby-theta-97.vercel.app/)
+
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/189636c1-467c-47a7-ae99-fbab6eb67201" width="700" />
   <br><br>
@@ -15,6 +18,18 @@ Este é um site de portfólio moderno e responsivo. O projeto apresenta uma nave
 ----------------------------------------------------------------------
 
 # 🛠️ Tecnologias Utilizadas
+
+## 🚀 Funcionalidades
+
+✅ **Menu Responsivo:** Um menu de navegação otimizado para desktop e mobile.  
+✅ **Design Moderno:** Layout limpo e agradável, adaptado para diversas telas.  
+✅ **Seções Bem Definidas:** Home, About, Skills, Projects e Contact.  
+✅ **Animações e Transições Suaves:** Efeitos de hover e movimentação responsiva.  
+✅ **Código Estruturado:** Fácil manutenção e personalização.  
+
+----------------------------------------------------------------------
+
+## 🛠️ Tecnologias Utilizadas
 
 <img align="left" width="50px" style="padding-right: 50px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />  
 
