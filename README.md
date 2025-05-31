@@ -1,6 +1,6 @@
-# 📌 Portfolio Website
+# Portfolio 
 
-Este é um site de portfólio moderno e responsivo. O projeto apresenta uma navegação intuitiva, animações suaves e um design profissional para destacar minhas habilidades e projetos.
+Este é o meu portfólio. O projeto apresenta uma navegação intuitiva, animações e um design profissional para destacar minhas habilidades e projetos.
 
 # Link: [Portfolio](https://portfolio-ruby-theta-97.vercel.app/)
 
@@ -20,7 +20,7 @@ Este é um site de portfólio moderno e responsivo. O projeto apresenta uma nave
 
 ----------------------------------------------------------------------
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 <img align="left" width="50px" style="padding-right: 50px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />  
 
