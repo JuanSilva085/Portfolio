@@ -1,6 +1,6 @@
 # Portfolio 
 
-Este é o meu portfólio. O projeto apresenta uma navegação intuitiva, animações e um design profissional para destacar minhas habilidades e projetos.
+Este é o meu portfólio. Aqui mostro um pouco das minhas habilidades e projetos.
 
 # Link: [Portfolio](https://portfolio-ruby-theta-97.vercel.app/)
 
