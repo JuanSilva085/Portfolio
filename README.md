@@ -13,8 +13,6 @@ Este é o meu portfólio. Aqui mostro um pouco das minhas habilidades e projetos
   <img src="https://github.com/user-attachments/assets/8264bd96-9a72-4e25-ac69-2d6dfb366ec9" width="700" />
   <br><br>
   <img src="https://github.com/user-attachments/assets/60a53f92-3821-4dd1-b5eb-e9f7cf9272e4" width="700" />
-  <br><br>
-  <img src="https://github.com/user-attachments/assets/b015a722-8ebe-4a7b-94bc-ab9ac2eb1755" width="700" />
 </p>
 
 
