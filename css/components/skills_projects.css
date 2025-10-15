@@ -1,0 +1,127 @@
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.skill-category {
+    background: rgba(26, 31, 46, 0.8);
+    backdrop-filter: blur(10px);
+    border-left: 3px solid #3b82f6;
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.skill-category:hover {
+    background: #1f2937;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+}
+
+.skill-category h3 {
+    color: #3b82f6;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skill-category p {
+    color: #b0b0b0;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.project-card {
+    background: rgba(26, 31, 46, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 1.8rem;
+    transition: all 0.3s;
+    border: 1px solid #2a2f3e;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border-color: #3b82f6;
+}
+
+.project-card h3 {
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.project-card.security h3::before {
+    content: '🔒 ';
+}
+
+.project-card.security {
+    border-left: 3px solid #10b981;
+}
+
+.project-card.security:hover {
+    border-color: #10b981;
+}
+
+.project-card p {
+    color: #a0a0a0;
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+}
+
+.tech-stack {
+    color: #3b82f6;
+    font-size: 0.9rem;
+    padding-top: 1rem;
+    border-top: 1px solid #2a2f3e;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.project-card.security .tech-stack {
+    color: #10b981;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-link {
+    color: #3b82f6;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: all 0.3s;
+}
+
+.project-link:hover {
+    color: #60a5fa;
+    transform: translateX(3px);
+}
+
+.project-card.security .project-link {
+    color: #10b981;
+}
+
+.project-card.security .project-link:hover {
+    color: #34d399;
+}
