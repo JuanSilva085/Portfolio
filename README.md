@@ -6,13 +6,14 @@ Este é o meu portfólio. Aqui mostro um pouco das minhas habilidades e projetos
 
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/2a7cbbde-963d-483c-afa2-592209ef2de1" width="700" />
+  <img src="https://github.com/user-attachments/assets/fad6c404-5439-49b5-90cb-120f63072de5" width="700" /> 
   <br><br>
-  <img src="https://github.com/user-attachments/assets/6016634e-104e-4104-8c82-c8d70a41317d" width="700" />
+  <img src="https://github.com/user-attachments/assets/4b80d623-6967-43f9-8209-37e78699bb8d" width="700" />
   <br><br>
-  <img src="https://github.com/user-attachments/assets/8264bd96-9a72-4e25-ac69-2d6dfb366ec9" width="700" />
+  <img src="https://github.com/user-attachments/assets/b2fb7dd3-33f5-4f9d-bbc1-188341646911" width="700" />
   <br><br>
-  <img src="https://github.com/user-attachments/assets/60a53f92-3821-4dd1-b5eb-e9f7cf9272e4" width="700" />
+  <img src="https://github.com/user-attachments/assets/58f48af1-e74f-4faa-bc4f-d326e5d96796" width="700" />
+
 </p>
 
 
