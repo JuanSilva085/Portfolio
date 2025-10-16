@@ -53,7 +53,6 @@ class BinaryCode {
     }
 }
 
-// Linhas de scan
 class ScanLine {
     constructor() {
         this.y = Math.random() * canvas.height;
@@ -76,7 +75,6 @@ class ScanLine {
     }
 }
 
-// Hexágonos
 class Hexagon {
     constructor() {
         this.x = Math.random() * canvas.width;
